@@ -1,0 +1,162 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Stored variables*/
+:root {
+    --primary: #396dff;
+    --grey: #f7f7f7;
+    --dark-grey: #acabab;
+    --white: #fff;
+    --background: #000;
+
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+    --m-plus: 20px;
+    --l: 24px;
+    --xl: 32px;
+
+    --home-font-size: 20px;
+    --upper-bar-size: 80px;
+}
+
+/* All */
+html,
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    all: revert;
+    display: inline-block;
+    border: none;
+    padding: var(--m);
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    font-size: var(--m-plus);
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Defined u */
+
+.u-textCenter {
+    text-align: center;
+}
+
+.u-flex {
+    display: flex;
+}
+
+.u-position {
+    position: absolute;
+}
+
+/* Defined u */
+
+.main {
+    color: var(--background);
+    position: relative;
+    margin: 0px;
+}
+
+.textOnImg {
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    font-weight: 800;
+}
+
+.imgFill {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.bottom {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    background-color: var(--background);
+    position: relative;
+    color: var(--white);
+    margin-top: 500px;
+}
+
+/* Views */
+
+.HomeView {
+    background: url("img/blue_range.jpg") left bottom;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+}
+
+/* Navigation */
+
+.Navbar-navTitle {
+    color: var(--white);
+    font-size: var(--home-font-size);
+    line-height: 0px;
+}
+
+.Navbar-titleBox {
+    padding: var(--s);
+}
+
+.Navbar-container {
+    background-color: var(--background);
+    height: var(--upper-bar-size);
+    margin: 0px;
+    justify-content: start;
+}
+
+.Navbar-subContainer {
+    flex-basis: auto;
+    flex-grow: 1;
+    font-size: var(--m);
+    max-width: 100px;
+    height: var(--xl);
+    margin: var(--s) var(--m);
+    text-align: center;
+    line-height: 0px;
+    border-radius: var(--xs);
+    background-color: var(--background);
+}
+
+.Navbar-menu {
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: space-around;
+    width: 100%;
+    color: var(--white);
+}
+
+.App-container {
+    transform:translateY(0); /*var(--upper-bar-size));*/
+}

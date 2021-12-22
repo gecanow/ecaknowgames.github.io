@@ -1,0 +1,15 @@
+block navigation
+    div.Navbar-container.u-flex
+        div.Navbar-titleBox
+            h1.Navbar-navTitle Eca
+            h1.Navbar-navTitle Know
+            h1.Navbar-navTitle Games
+        section.u-flex.Navbar-menu 
+            button(onclick='togglePage("about")').Navbar-subContainer About
+            button(onclick='togglePage("apps")').Navbar-subContainer Apps
+            button(onclick='togglePage("features")').Navbar-subContainer Features
+            button(onclick='togglePage("contact")').Navbar-subContainer Contact
+        script.
+            function togglePage(page) {
+                window.location.href = `/${page}`
+            }
