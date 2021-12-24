@@ -1,0 +1,116 @@
+@import url("style.css");
+
+.centerSnug {
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Main Feature  */
+
+.MainFeatureImg { 
+    background: url("../img/features/itunes-headshot.jpg") center center; 
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+}
+.PostFeatureImg { 
+    background: url("../img/features/tim-cook-tweet-wwdc-scholarships.jpg") top right; 
+    background-position: top;
+    background-size: scale-down;
+}
+
+.MainFeatureBackground {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    display: block;
+    padding: 0px;
+
+    /* 
+    Create the parallax scrolling effect (https://www.w3schools.com/howto/howto_css_parallax.asp)
+    */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.MainFeatureDescriptionBox {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 4%; left: 55%;
+}
+
+.MainFeaturePreTitle {
+    line-height: 5%;
+    font-size: 20px;
+}
+
+.MainFeatureTitle {
+    line-height: 5%;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.MainFeatureDescription {
+    line-height: 25%;
+}
+
+/* Article Pics  */
+
+.AppleInsider { background: url("../img/features/apple_insider.png") center center;}
+.MacRumors { background: url("../img/features/mac_rumors.png") center center;}
+.Maclife { background: url("../img/features/maclife.png") center center;}
+.Refinery29 { background: url("../img/features/Refinery29_logo.svg.png") center center;}
+.TC { background: url("../img/features/tc.png") center center;}
+.Twitter { background: url("../img/features/twitter.jpg") center center;}
+
+/* Article Feature  */
+
+.ArticleContainer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.ArticleImg {
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.ArticleDescriptionBox {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ArticleTitle {
+    line-height: 100%;
+    font-size: 30px;
+    color: black;
+}
+
+.ArticleSource {
+    line-height: 0%;
+    font-size: 20px;
+    color: black;
+}
+
+.ArticleDate {
+    line-height: 0%;
+    font-size: 15px;
+    color: black;
+}
+
