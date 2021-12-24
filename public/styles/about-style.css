@@ -1,0 +1,49 @@
+@import url("style.css");
+
+.centerSnug {
+    max-width: 80%;
+    margin: auto;
+}
+
+.PersonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+}
+
+.HawkView {
+    background: url("../img/reflection.jpg") center center;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.GabyView {
+    background: url("../img/gaby_headshot.jpg") left bottom;
+}
+
+.EliView {
+    background: url("../img/eli_headshot.jpg") left bottom;
+}
+
+.PersonView {
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.personDescription {
+    text-align: left;
+}

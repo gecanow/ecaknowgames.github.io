@@ -1,0 +1,94 @@
+@import url("style.css");
+
+.centerSnug {
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Apps */
+
+.AIScollPic { background: url("../img/backgrounds/player\ x2\ scroll\ pic.png") center center; }
+.AIIcon { background: url("../img/promos/ai\ promo\ icon.png") center center; }
+.AIColor { background-color: rgb(168, 102, 199); }
+
+.GasLawsScollPic { background: url("../img/backgrounds/gas\ laws\ scroll\ pic.png") center center; }
+.GasLawsIcon { background: url("../img/promos/the\ gas\ laws\ promo\ icon.png") center center; }
+.GasLawsColor { background-color: rgb(202, 243, 226); }
+
+.MagicScollPic { background: url("../img/backgrounds/magic\ order\ scroll\ pic.png") center center; }
+.MagicIcon { background: url("../img/promos/magic\ order\ promo\ icon.png") center center; }
+.MagicColor { background-color: rgb(196, 196, 196); }
+
+.RedScollPic { background: url("../img/backgrounds/red\ treasure\ scroll\ pic.png") center center; }
+.RedIcon { background: url("../img/promos/red\ treasure\ promo\ icon.png") center center; }
+.RedColor { background-color: rgb(243, 142, 142); }
+
+.PhotoScollPic { background: url("../img/backgrounds/photo\ picasso\ scroll\ pic.png") center center; }
+.PhotoIcon { background: url("../img/promos/photo\ picasso\ promo\ icon.png") center center; }
+.PhotoColor { background-color: rgb(158, 183, 238); }
+
+.TTTScollPic { background: url("../img/backgrounds/rsb\ ttt\ scroll\ pic.jpg") center center; }
+.TTTIcon { background: url("../img/promos/rsb\ ttt\ promo\ icon.png") center center; }
+.TTTColor { background-color: rgb(196, 196, 196); }
+
+.CJScollPic { background: url("../img/backgrounds/rz\ schedule\ scroll\ pic.png") center center; }
+.CJIcon { background: url("../img/promos/rz\ schedule\ promo\ icon.png") center center; }
+.CJColor { background-color: rgb(184, 222, 245); }
+
+/* Background */
+
+.ContainerView {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.AppView {
+    max-width: 90%;
+    width: 90%;
+    height: 600px;
+    display: block;
+    object-fit: fill;
+    padding: 0px;
+    margin-top: 10px;
+
+    /* 
+    Create the parallax scrolling effect (https://www.w3schools.com/howto/howto_css_parallax.asp)
+    */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* App Descriptions */
+
+.AppContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.IconView {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 10px;
+}
+
+.appDescription {
+    text-align: left;
+}

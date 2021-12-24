@@ -3,4 +3,9 @@ extends layout
 block layout-content
     include navbar
     div.App-container
-        include home
+        if title == "home"
+            include home 
+        else if title == "about"
+            include about
+        else if title == "apps"
+            include apps
