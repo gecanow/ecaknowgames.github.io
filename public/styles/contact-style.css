@@ -17,6 +17,9 @@
     margin: auto;
     text-align: center;
     background-color: gray;
+
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .InputContainer {
@@ -53,6 +56,9 @@
     width: 500px;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
+
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .Large {
@@ -61,13 +67,17 @@
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     text-align: start;
+
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .SendButton {
     height: fit-content;
     width: fit-content;
     font-size: large;
+    border: 1px solid black;
     border-radius: 5px;
-    border-color: black;
-    border-width: 5px;
+    justify-self: flex-end;
+    margin-top: 10px;
 }

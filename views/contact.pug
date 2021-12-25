@@ -2,19 +2,19 @@ block main
     link(rel='stylesheet', href='/styles/contact-style.css')
     .GeneralBackPic.CoffeeShop
         div.main.u-textCenter.u-position.textOnImg
-            h1.CenterTitle LET'S GET IN TOUCH
-            form(action='/add_movie', method='POST')
+            h1.CenterTitle LET'S GET IN TOUCH!
+            form(action='/send_email', method='POST')
                 .InputContainer
                     .Input
-                        p.TextInput Name:
-                        input(type='text', name='name', value='').Short
+                        p.TextInput Name:*
+                        input(type='text', name='name', value='', required='true').Short
                     .Input
-                        p.TextInput Email: 
-                        input(type='text', name='email', value='').Short
+                        p.TextInput Email:* 
+                        input(type='text', name='email', value='', required='true').Short
                     .Input
-                        p.TextInput Subject: 
-                        input(type='text', name='subject', value='').Short
+                        p.TextInput Subject:* 
+                        input(type='text', name='subject', value='', required='true').Short
                     .Input
-                        p.TextInput Message: 
-                        textarea(type='text', name='message', value='').Large
-                button.SendButton Send
+                        p.TextInput Message:*
+                        textarea(type='text', name='message', value='', required='true').Large
+                    button(type='submit', value='submit').SendButton Send
