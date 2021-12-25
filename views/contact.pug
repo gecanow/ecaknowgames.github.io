@@ -1,19 +1,20 @@
 block main 
     link(rel='stylesheet', href='/styles/contact-style.css')
     .GeneralBackPic.CoffeeShop
-        h1.CenterTitle LET'S GET IN TOUCH
-        form(action='/add_movie', method='POST')
-            .InputContainer
-                .Input
-                    p.TextInput Name:
-                    input(type='text', name='name', value='').Short
-                .Input
-                    p.TextInput Email: 
-                    input(type='text', name='email', value='').Short
-                .Input
-                    p.TextInput Subject: 
-                    input(type='text', name='subject', value='').Short
-                .Input
-                    p.TextInput Message: 
-                    input(type='text', name='message', value='').Large
-                input(type='send', value='Send')
+        div.main.u-textCenter.u-position.textOnImg
+            h1.CenterTitle LET'S GET IN TOUCH
+            form(action='/add_movie', method='POST')
+                .InputContainer
+                    .Input
+                        p.TextInput Name:
+                        input(type='text', name='name', value='').Short
+                    .Input
+                        p.TextInput Email: 
+                        input(type='text', name='email', value='').Short
+                    .Input
+                        p.TextInput Subject: 
+                        input(type='text', name='subject', value='').Short
+                    .Input
+                        p.TextInput Message: 
+                        input(type='text', name='message', value='').Large
+                    input(type='send', value='Send')
