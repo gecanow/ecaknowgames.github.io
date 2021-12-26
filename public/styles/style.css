@@ -18,6 +18,7 @@
 
     --home-font-size: 20px;
     --upper-bar-size: 80px;
+    --lower-bar-size: 250px;
 }
 
 /* All */
@@ -67,6 +68,10 @@ button:active {
 
 .u-position {
     position: absolute;
+}
+
+.u-halfWidth {
+    width: 50%;
 }
 
 /* Defined u */
@@ -130,6 +135,7 @@ button:active {
     color: var(--white);
     font-size: var(--home-font-size);
     line-height: 4px;
+    text-decoration: none;
 }
 
 .Navbar-titleBox {
@@ -165,6 +171,52 @@ button:active {
     color: var(--white);
 }
 
+.Bottombar-container {
+    background-color: var(--background);
+    height: var(--lower-bar-size);
+    margin: 0px;
+    justify-content: start;
+}
+
+.Bottombar-subcontainer {
+    height: var(--lower-bar-size);
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.Bottombar-rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Bottombar-link {
+    color: var(--white);
+}
+
 .App-container {
     transform:translateY(0); /*var(--upper-bar-size));*/
+}
+
+.CenterTitle {
+    display: inline-block;
+    margin: auto;
+
+    width: fit-content;
+    max-height: fit-content;
+    height: fit-content;
+    text-align: center;
+    background-color: gray;
+
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+
+    overflow-wrap: normal;
+    text-overflow: clip;
 }

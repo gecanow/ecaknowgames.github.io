@@ -47,3 +47,12 @@
 .personDescription {
     text-align: left;
 }
+
+.AnimateWidth {
+    width: 100%;
+    overflow:hidden;
+    -webkit-transition: width 5s ease-in-out;
+    -moz-transition: width 5s ease-in-out;
+    -o-transition: width 5s ease-in-out;
+    transition: width 5s ease-in-out;
+}
