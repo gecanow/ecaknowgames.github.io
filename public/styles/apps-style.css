@@ -5,6 +5,8 @@
     margin: auto;
 }
 
+.marginTop { margin-top: 100px; }
+
 /* Apps */
 
 .AIScrollPic { background: url("../img/backgrounds/player\ x2\ scroll\ pic.png") center center; }

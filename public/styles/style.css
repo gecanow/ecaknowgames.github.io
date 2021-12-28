@@ -272,6 +272,9 @@ button:active {
 
     overflow-wrap: normal;
     text-overflow: clip;
+/* 
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white; */
 }
 
 /* Home Styles */

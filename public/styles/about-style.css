@@ -1,9 +1,11 @@
 @import url("style.css");
 
 .centerSnug {
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
 }
+
+.marginTop { margin-top: 100px; }
 
 .PersonContainer {
     display: flex;
