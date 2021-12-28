@@ -5,20 +5,20 @@ block main
         div.CenterTitle.centerSnug
             h1 EcaKnowGames
             p featured apps
-        script.
-            var appToShow = "";
-            function testClick(name) {
-                appToShow = name;
-                //- const o = document.getElementById("app_detail").style.visibility;
-                //- console.log(o);
-                //- document.getElementById("app_detail").style.visibility = "hidden";
-            }
         include ./mixins/_appDetail
         include ./mixins/_appMainIcon
         include apps_store
+        script.
+            function appClick(app_id) {
+                const current_html = document.getElementById("app_detail").innerHTML;
+                const target_html = document.getElementById(app_id).innerHTML;
+                const output_html = current_html === target_html ? "" : target_html;
+                document.getElementById("app_detail").innerHTML = output_html;
+            }
         .AppsContainer
             each app in apps
                 +appMainIcon(app)
+        div(class="hide")
+            each app in apps
+                +appDetail(app)
         div(id="app_detail")
-            - console.log(appToShow);
-            +appDetail(appToShow)
