@@ -137,24 +137,6 @@
     margin-bottom: 0;
 }
 
-.hiddenIcon { opacity: 0%; }
-.hiddenIcon:hover { opacity: 100%; }
-
-.fadeIcon { opacity: 100%; }
-.fadeIcon:hover { opacity: 70%; }
-
-.bubbleIcon { transition: all 0.1s ease-out; cursor: pointer; }
-.bubbleIcon:hover { transform: scale(1.2); }
-.bubbleIcon:link { text-decoration: none!important; }
-
-.hide { display: none; }
-.show { display: block; }
-
-.pad {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .appName {
     text-align: left;
     font-size: xx-large;

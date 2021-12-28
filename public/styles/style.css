@@ -42,6 +42,10 @@ button {
     -moz-appearance: none;
 }
 
+a {
+    cursor: pointer;
+}
+
 button:hover,
 button:focus {
     font-size: var(--m-plus);
@@ -54,6 +58,24 @@ button:focus {
 
 button:active {
     transform: scale(0.99);
+}
+
+.hiddenIcon { opacity: 0%; }
+.hiddenIcon:hover { opacity: 100%; }
+
+.fadeIcon { opacity: 100%; }
+.fadeIcon:hover { opacity: 70%; }
+
+.bubbleIcon { transition: all 0.1s ease-out; }
+.bubbleIcon:hover { transform: scale(1.2); }
+.bubbleIcon:link { text-decoration: none!important; }
+
+.hide { display: none; }
+.show { display: block; }
+
+.pad {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Defined u */
@@ -115,6 +137,10 @@ button:active {
     background: url("../img/backgrounds/general.jpg") center center;
 }
 
+.WorkStation {
+    background: url("../img/work.jpg") center center;
+}
+
 .BlueRange {
     background: url("../img/blue_range.jpg") left bottom;
 }
@@ -127,6 +153,32 @@ button:active {
     display: block;
     object-fit: cover;
     padding: 0px;
+}
+
+.HomeViewParallax {
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    padding: 0px;
+
+    /* Create the parallax scrolling effect (https://www.w3schools.com/howto/howto_css_parallax.asp) */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.XLargeCover {
+    height: 120vh;
+}
+
+.LargeCover {
+    height: 100vh;
+}
+
+.SmallCover {
+    height: 500px;
 }
 
 /* Navigation */
@@ -211,12 +263,64 @@ button:active {
     max-height: fit-content;
     height: fit-content;
     text-align: center;
-    background-color: gray;
+    /* background-color: gray; */
 
-    border: 1px solid black;
-    border-radius: 2px;
+    /* border: 1px solid black; */
+    /* border-radius: 2px; */
     padding: 10px;
+    margin-top: 150px;
 
     overflow-wrap: normal;
     text-overflow: clip;
+}
+
+/* Home Styles */
+
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 60%;
+}
+
+.AsFeaturedInBox {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+}
+
+.SmallVerticalBar {
+    border: 0.2px solid grey;
+    height: 40px;
+}
+
+/* Feature Pics  */
+
+.AppleInsider { src: url("../img/features/apple_insider.png");}
+.MacRumors { src: url("../img/features/mac_rumors.png");}
+.Maclife { src: url("../img/features/maclife.png");}
+.Refinery29 { src: url("../img/features/Refinery29_logo.svg.png");}
+.TC { src: url("../img/features/tc.png");}
+.Twitter { background: url("../img/features/twitter.jpg") center center;} /* Used in featured articles */
+
+.FeatureImg {
+    display: block;
+    object-fit: scale-down;
+    width: 150px;
+    padding: 5px;
+}
+
+.FlexImgBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 600px;
+    height: 100%;
+    gap: 20px;
 }

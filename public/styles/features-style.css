@@ -26,9 +26,7 @@
     display: block;
     padding: 0px;
 
-    /* 
-    Create the parallax scrolling effect (https://www.w3schools.com/howto/howto_css_parallax.asp)
-    */
+    /* Create the parallax scrolling effect (https://www.w3schools.com/howto/howto_css_parallax.asp) */
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -57,15 +55,6 @@
 .MainFeatureDescription {
     line-height: 25%;
 }
-
-/* Article Pics  */
-
-.AppleInsider { background: url("../img/features/apple_insider.png") center center;}
-.MacRumors { background: url("../img/features/mac_rumors.png") center center;}
-.Maclife { background: url("../img/features/maclife.png") center center;}
-.Refinery29 { background: url("../img/features/Refinery29_logo.svg.png") center center;}
-.TC { background: url("../img/features/tc.png") center center;}
-.Twitter { background: url("../img/features/twitter.jpg") center center;}
 
 /* Article Feature  */
 
