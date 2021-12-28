@@ -1,0 +1,5 @@
+mixin appMainIcon(app)
+    link(rel='stylesheet', href='/styles/apps-style.css')
+    a(onclick='testClick()').bubbleIcon
+        p.IconNameView #{app.name}
+        .IconView(class=`${app.style_id}Icon`)

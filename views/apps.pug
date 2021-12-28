@@ -1,59 +1,24 @@
 block main
+    link(rel='stylesheet', href='/styles/apps-style.css')
+    div.CoffeeShop.HomeView
     div.main.u-textCenter.u-position.textOnImg
-        h1 EcaKnowGames
-        p featured apps
-        link(rel='stylesheet', href='/styles/apps-style.css')
-        .ContainerView
-            .AppView.AIScollPic
-                .AppContainer.centerSnug.AIColor
-                    .IconView.AIIcon
-                    div
-                        h3.appDescription
-                            span.AIColor Player X2 
-                        p.appDescription.AIColor An artificial intelligence game room that allows you to play Tic Tac Toe or 4-In-A-Row against a friend or against the computer. Happy playing!
-            .AppView.GasLawsScollPic
-                .AppContainer.centerSnug.GasLawsColor
-                    .IconView.GasLawsIcon
-                    div
-                        h3.appDescription
-                            span.GasLawsColor The Gas Laws
-                        p.appDescription.GasLawsColor A demonstration of the Chemistry gas laws. Never get confused by PV=nRT again! Just move the sliders to observe the relationship between pressure, volume, moles, and temperature of gases.
-            .AppView.MagicScollPic
-                .AppContainer.centerSnug.MagicColor
-                    .IconView.MagicIcon
-                    div
-                        h3.appDescription
-                            span.MagicColor Magic Order
-                        p.appDescription.MagicColor Tap the balls in order of their numbers as they pop up on the screen. Be sure to tap on them before they fall back down, or you lose! 
-            .AppView.RedScollPic
-                .AppContainer.centerSnug.RedColor
-                    .IconView.RedIcon
-                    div
-                        h3.appDescription
-                            span.RedColor Red Treasure
-                        p.appDescription.RedColor Dodge the bullets while collecting gold and red treasure! Move left by tapping on the left side of the screen and move right by tapping on the right side.
-            .AppView.PhotoScollPic
-                .AppContainer.centerSnug.PhotoColor
-                    .IconView.PhotoIcon
-                    div
-                        h3.appDescription
-                            span.PhotoColor Photo Picasso
-                        p.appDescription.PhotoColor Have you ever wanted to add your own drawings and designs directly onto photos from your photo library? Well, now you can!
-            .AppView.TTTScollPic
-                .AppContainer.centerSnug.TTTColor
-                    .IconView.PhotoIcon
-                    div
-                        h3.appDescription
-                            span.TTTColor RoShamBo TicTacToe
-                        p.appDescription.TTTColor Get ready to challenge friends in the classic games of TicTacToe and RoShamBo! Connect with nearby friends using bluetooth by simply clicking on their display name, and challenge them in real-time to a game of tic tac toe or rock paper scissors (roshambo).
-            .AppView.CJScollPic
-                .AppContainer.centerSnug.CJColor
-                    .IconView.CJIcon
-                    div
-                        h3.appDescription
-                            span.CJColor CJ Schedule
-                        p.appDescription.CJColor Are you a student at Rochelle Zell? Use this easy, personalized organizer for your CJ Schedule! 
-            .AppView.GeneralScollPic
-                .centerSnug.GeneralColor
-                    a(href="https://apps.apple.com/us/developer/ecaknowgames-llc/id1029592340")
-                        h1.GeneralTextColor Visit EcaKnowGames on the App Store today!
+        div.CenterTitle.centerSnug
+            h1 EcaKnowGames
+            p featured apps
+        script.
+            var appToShow = "";
+            function testClick(name) {
+                appToShow = name;
+                //- const o = document.getElementById("app_detail").style.visibility;
+                //- console.log(o);
+                //- document.getElementById("app_detail").style.visibility = "hidden";
+            }
+        include ./mixins/_appDetail
+        include ./mixins/_appMainIcon
+        include apps_store
+        .AppsContainer
+            each app in apps
+                +appMainIcon(app)
+        div(id="app_detail")
+            - console.log(appToShow);
+            +appDetail(appToShow)
