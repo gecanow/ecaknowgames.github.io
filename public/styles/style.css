@@ -44,6 +44,8 @@ button {
 
 a {
     cursor: pointer;
+    content: attr("target") "_blank";
+    content: attr("rel") "noreferrer noopener";
 }
 
 button:hover,
