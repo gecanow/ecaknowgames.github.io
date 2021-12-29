@@ -1,19 +1,28 @@
 block main
     link(rel='stylesheet', href='/styles/apps-style.css')
-    .WorkStation.HomeViewParallax.XLargeCover
-    .main.u-textCenter.u-position.textOnImg.marginTop
-        .CenterTitle.centerSnug
+    include ./mixins/_appDetail
+    include ./mixins/_appMainIcon
+    include apps_store
+    .WhiteBar.WorkStation.HomeViewParallax.SmallCover
+        .CenterTitle.centerSnug.marginTop
             h1 EcaKnowGames
             p featured apps
-        include ./mixins/_appDetail
-        include ./mixins/_appMainIcon
-        include apps_store
         script.
             function appClick(app_id) {
+                // set the app_detail's inner html to hold the (hidden) app detail view
                 const current_html = document.getElementById("app_detail").innerHTML;
                 const target_html = document.getElementById(app_id).innerHTML;
                 const output_html = current_html === target_html ? "" : target_html;
                 document.getElementById("app_detail").innerHTML = output_html;
+
+                // hide all caret pointers just in case
+                document.querySelectorAll('[id$="-caret"]').forEach((caret) => {
+                    caret.style.visibility = "hidden";
+                });
+
+                // reveal / hide the caret pointer
+                const output_caret = current_html === target_html ? "hidden" : "visible";
+                document.getElementById(`${app_id}-caret`).style.visibility = output_caret;
             }
         .AppsContainer
             each app in apps

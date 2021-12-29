@@ -1,5 +1,9 @@
 mixin appMainIcon(app)
     link(rel='stylesheet', href='/styles/apps-style.css')
-    a(onclick=`appClick("${app.id}")`).bubbleIcon
-        p.IconNameView #{app.name}
-        .IconView(class=`${app.style_id}Icon`)
+    div
+        .bubbleIcon
+            a(onclick=`appClick("${app.id}")`, id=`${app.id}-icon`)
+                p.IconNameView #{app.name}
+                .IconView(class=`${app.style_id}Icon`)
+        .invisible(id=`${app.id}-caret`)
+            .caret.up
