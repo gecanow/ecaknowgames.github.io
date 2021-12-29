@@ -3,6 +3,7 @@ block main
         h1 EcaKnowGames 
         p select features
     link(rel='stylesheet', href='/styles/features-style.css')
+    include ./mixins/_articleFeature.pug
     .MainFeatureBackground.MainFeatureImg
         .MainFeatureDescriptionBox
             h3.MainFeaturePreTitle Meet The Developer 
@@ -10,59 +11,6 @@ block main
             p.MainFeatureDescription How 18-year-old Gabrielle Ecanow became a prolific app creator.
             a(href="https://itunes.apple.com/us/story/id1435962393" target="_blank" rel="noopener noreferrer").MainFeatureDescription Click here to read more.
     .centerSnug
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://itunes.apple.com/us/story/id1435962393" target="_blank" rel="noopener noreferrer").ArticleTitle Meet the Developer: Problem Solved
-                p.ArticleSource App Store Preview
-                p.ArticleDate October 22, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://www.refinery29.com/2018/06/200686/apple-wwdc-scholarship-winners" target="_blank" rel="noopener noreferrer").ArticleTitle How 3 Teenage Women Created Apps Before Finishing High School & Earned Recognition From Apple
-                p.ArticleSource Refinery29
-                p.ArticleDate June 4, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://techcrunch.com/2018/06/04/student-developers-arrive-in-full-force-for-apples-wwdc/" target="_blank" rel="noopener noreferrer").ArticleTitle Student developers arrive in full force for Apple's WWDC
-                p.ArticleSource TechCrunch
-                p.ArticleDate June 4, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="http://www.maclife.de/news/wwdc-2018-apple-ceo-tim-cook-zeigt-diesjaehrige-stipendiengewinner-100103282.html" target="_blank" rel="noopener noreferrer").ArticleTitle WWDC 2018: Apple-CEO Tim Cook zeigt diesjährige Stipendiengewinner
-                p.ArticleSource MacLife
-                p.ArticleDate June 4, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://www.macrumors.com/2018/06/03/cook-video-wwdc-scholarship/" target="_blank" rel="noopener noreferrer").ArticleTitle Apple CEO Tim Cook Shares Video of WWDC 2018 Scholarship Winners and Their Apps
-                p.ArticleSource MacRumors
-                p.ArticleDate June 3, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://appleinsider.com/articles/18/06/03/tim-cook-spends-time-with-scholarship-winners-ahead-of-wwdc" target="_blank" rel="noopener noreferrer").ArticleTitle Tim Cook spends time with scholarship winners ahead of WWDC
-                p.ArticleSource AppleInsider
-                p.ArticleDate June 3, 2018
-        .ArticleContainer
-            .ArticleImg.Twitter
-            .ArticleDescriptionBox
-                a(href="https://twitter.com/tim_cook/status/1003431084401442817" target="_blank" rel="noopener noreferrer").ArticleTitle Read Apple CEO Tim Cook's tweet about meeting me and 7 other WWDC scholars!
-                p.ArticleDate June 3, 2018
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="http://www.chicagotribune.com/ct-vhr-congressional-app-winner-tl-1228-20171229-story.html" target="_blank" rel="noopener noreferrer").ArticleTitle Learn about our newest app, Study Buddy Connection, and how it won 2nd place in the Congressional App Challenge!
-                p.ArticleSource ChicagoTribune
-                p.ArticleDate December 29, 2017
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://vulcanpost.com/612559/apple-wwdc-scholars/" target="_blank" rel="noopener noreferrer").ArticleTitle From 10 to 82, These App Developers We Met At WWDC Prove That Age Is Just A Number 
-                p.ArticleSource Vulcan Post
-                p.ArticleDate June 13, 2017
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="http://www.bild.de/digital/multimedia/ios/nachwuchsentwickler-wwdc-52111094.bild.html" target="_blank" rel="noopener noreferrer").ArticleTitle APPLES NACHWUCHS-ENTWICKLER - Apple's Youth Developers
-                p.ArticleSource Bild, #[i Germany]
-                p.ArticleDate June 9, 2017
-        .ArticleContainer
-            .ArticleDescriptionBox
-                a(href="https://www.khaleejtimes.com/youre-never-too-young---or-too-old---to-develop-apps" target="_blank" rel="noopener noreferrer").ArticleTitle You're never too young - or too old - to develop apps
-                p.ArticleSource Khaleej Times, #[i Dubai]
-                p.ArticleDate June 7, 2017
+        each feature in features 
+            +articleFeature(feature)
     .MainFeatureBackground.PostFeatureImg

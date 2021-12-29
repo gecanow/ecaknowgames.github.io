@@ -1,0 +1,16 @@
+mixin articleFeature(article)
+    link(rel='stylesheet', href='/styles/features-style.css')
+    .ArticleContainer
+        if article.image 
+            .ArticleImg(class=`${article.image}`)
+        .ArticleDescriptionBox
+            //- all features should have a title
+            a(href=`${article.href}` target="_blank" rel="noopener noreferrer").ArticleTitle #{article.title}
+            //- show source / location, where applicable
+            if article.source && article.location
+                p.ArticleSource #{article.source}, #[i #{article.location}]
+            else if article.source
+                p.ArticleSource #{article.source}
+            //- show date, where applicable
+            if article.date
+                p.ArticleDate #{article.date}

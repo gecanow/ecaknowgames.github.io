@@ -1,0 +1,51 @@
+[
+    {
+        "id": "player_x2",
+        "name": "Player X2",
+        "style_id": "AI",
+        "description": "Player X2 is an artificial intelligence game room that allows you to play Tic Tac Toe or 4-In-A-Row against a friend or against the computer. Happy playing!",
+        "link": "https://itunes.apple.com/us/app/player-x2/id1411798778?mt=8"
+    },
+    {
+        "id": "gas_laws",
+        "name": "The Gas Laws",
+        "style_id": "GasLaws",
+        "description": "A demonstration of the Chemistry gas laws. Never get confused by PV=nRT again! Just move the sliders to observe the relationship between pressure, volume, moles, and temperature of gases.",
+        "link": "https://itunes.apple.com/us/app/the-gas-laws/id1104714758?mt=8"
+    },
+    {
+        "id": "magic_order",
+        "name": "Magic Order",
+        "style_id": "Magic",
+        "description": "Tap the balls in order of their numbers as they pop up on the screen. Be sure to tap on them before they fall back down, or you lose! ",
+        "link": "https://itunes.apple.com/us/app/magic-order/id1032968473?mt=8"
+    },
+    {
+        "id": "red_treasure",
+        "name": "Red Treasure",
+        "style_id": "Red",
+        "description": "Dodge the bullets while collecting gold and red treasure! Move left by tapping on the left side of the screen and move right by tapping on the right side.",
+        "link": "https://itunes.apple.com/us/app/red-treasure/id1029592341?mt=8"
+    },
+    {
+        "id": "photo_picasso",
+        "name": "Photo Picasso",
+        "style_id": "Photo",
+        "description": "Have you ever wanted to add your own drawings and designs directly onto photos from your photo library? Well, now you can!",
+        "link": "https://itunes.apple.com/us/app/photo-picasso/id1168333440?mt=8"
+    },
+    {
+        "id": "rsb_ttt",
+        "name": "RoShamBo TicTacToe",
+        "style_id": "TTT",
+        "description": "Get ready to challenge friends in the classic games of TicTacToe and RoShamBo! Connect with nearby friends using bluetooth by simply clicking on their display name, and challenge them in real-time to a game of tic tac toe or rock paper scissors (roshambo).",
+        "link": "https://itunes.apple.com/us/app/roshambo-tictactoe/id1200351161?mt=8"
+    },
+    {
+        "id": "cj_schedule",
+        "name": "CJ Schedule",
+        "style_id": "CJ",
+        "description": "Are you a student at Rochelle Zell? Use this easy, personalized organizer for your CJ Schedule! ",
+        "link": "https://itunes.apple.com/us/app/cj-schedule/id1041740992?mt=8"
+    }
+]

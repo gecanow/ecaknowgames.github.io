@@ -1,0 +1,70 @@
+[
+    {
+        "href": "https://itunes.apple.com/us/story/id1435962393",
+        "title": "Meet the Developer: Problem Solved",
+        "source": "App Store Preview",
+        "date": "October 22, 2018"
+    },
+    {
+        "href": "https://www.refinery29.com/2018/06/200686/apple-wwdc-scholarship-winners",
+        "title": "How 3 Teenage Women Created Apps Before Finishing High School & Earned Recognition From Apple",
+        "source": "Refinery29",
+        "date": "June 4, 2018"
+    },
+    {
+        "href": "https://techcrunch.com/2018/06/04/student-developers-arrive-in-full-force-for-apples-wwdc/",
+        "title": "Student developers arrive in full force for Apple's WWDC",
+        "source": "TechCrunch",
+        "date": "June 4, 2018"
+    },
+    {
+        "href": "http://www.maclife.de/news/wwdc-2018-apple-ceo-tim-cook-zeigt-diesjaehrige-stipendiengewinner-100103282.html",
+        "title": "WWDC 2018: Apple-CEO Tim Cook zeigt diesjährige Stipendiengewinner",
+        "source": "MacLife",
+        "date": "June 4, 2018"
+    },
+    {
+        "href": "https://www.macrumors.com/2018/06/03/cook-video-wwdc-scholarship/",
+        "title": "Apple CEO Tim Cook Shares Video of WWDC 2018 Scholarship Winners and Their Apps",
+        "source": "MacRumors",
+        "date": "June 3, 2018"
+    },
+    {
+        "href": "https://appleinsider.com/articles/18/06/03/tim-cook-spends-time-with-scholarship-winners-ahead-of-wwdc",
+        "title": "Tim Cook spends time with scholarship winners ahead of WWDC",
+        "source": "AppleInsider",
+        "date": "June 3, 2018"
+    },
+    {
+        "href": "https://twitter.com/tim_cook/status/1003431084401442817",
+        "title": "Read Apple CEO Tim Cook's tweet about meeting me and 7 other WWDC scholars!",
+        "date": "June 3, 2018",
+        "image": "Twitter"
+    },
+    {
+        "href": "http://www.chicagotribune.com/ct-vhr-congressional-app-winner-tl-1228-20171229-story.html",
+        "title": "Learn about our newest app, Study Buddy Connection, and how it won 2nd place in the Congressional App Challenge!",
+        "source": "ChicagoTribune",
+        "date": "December 29, 2017"
+    },
+    {
+        "href": "https://vulcanpost.com/612559/apple-wwdc-scholars/",
+        "title": "From 10 to 82, These App Developers We Met At WWDC Prove That Age Is Just A Number",
+        "source": "Vulcan Post",
+        "date": "June 13, 2017"
+    },
+    {
+        "href": "http://www.bild.de/digital/multimedia/ios/nachwuchsentwickler-wwdc-52111094.bild.html",
+        "title": "APPLES NACHWUCHS-ENTWICKLER - Apple's Youth Developers",
+        "source": "Bild",
+        "location": "Germany",
+        "date": "June 9, 2017"
+    },
+    {
+        "href": "https://www.khaleejtimes.com/youre-never-too-young---or-too-old---to-develop-apps",
+        "title": "You're never too young - or too old - to develop apps",
+        "source": "Khaleej Times",
+        "location": "Dubai",
+        "date": "June 7, 2017"
+    }
+]
