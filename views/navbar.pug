@@ -6,14 +6,18 @@ block navigation
                     h1.Navbar-navTitle Eca
                     h1.Navbar-navTitle Know
                     h1.Navbar-navTitle Games
+            -
+                var options = [
+                    { id: "home", href: "/", title: "Home" },
+                    { id: "about", href: "/about", title: "About" },
+                    { id: "apps", href: "/apps", title: "Apps" },
+                    { id: "features", href: "/features", title: "Features" },
+                    { id: "contact", href: "/contact", title: "Contact" }
+                ];
             section.u-flex.Navbar-menu
-                a(href=`/`).Navbar-navTitle
-                    button.Navbar-subContainer Home
-                a(href=`/about`).Navbar-navTitle
-                    button.Navbar-subContainer About
-                a(href=`/apps`).Navbar-navTitle
-                    button.Navbar-subContainer Apps
-                a(href=`/features`).Navbar-navTitle
-                    button.Navbar-subContainer Features
-                a(href=`/contact`).Navbar-navTitle
-                    button.Navbar-subContainer Contact
+                each option in options
+                    a(href=`${option.href}`).Navbar-navTitle
+                        if title === `${option.id}`
+                            button.Navbar-subContainer(class="u-underline") #{option.title}
+                        else
+                            button.Navbar-subContainer #{option.title}
