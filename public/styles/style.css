@@ -160,17 +160,10 @@ button:active {
     background-repeat: no-repeat;
 }
 
-.XLargeCover {
-    height: 120vh;
-}
-
-.LargeCover {
-    height: 100vh;
-}
-
-.SmallCover {
-    height: 500px;
-}
+.XLargeCover { height: 120vh; }
+.LargeCover { height: 100vh; }
+.SmallCover { height: 500px; }
+.XSmallCover { height: 250px; }
 
 /* Navigation */
 
@@ -222,7 +215,8 @@ button:active {
 
 .Bottombar-container {
     background-color: var(--background);
-    height: var(--lower-bar-size);
+    height: fit-content; 
+    /* var(--lower-bar-size); */
     margin: 0px;
     justify-content: start;
 }
@@ -269,9 +263,6 @@ button:active {
 
     overflow-wrap: normal;
     text-overflow: clip;
-/* 
-    -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: white; */
 }
 
 /* Home Styles */
@@ -294,7 +285,7 @@ button:active {
 
 .SmallVerticalBar {
     border: 0.2px solid grey;
-    height: 40px;
+    height: 50px;
 }
 
 /* Feature Pics  */
@@ -323,4 +314,46 @@ button:active {
     width: 600px;
     height: 100%;
     gap: 20px;
+}
+
+/* Home Promo  */
+
+.BasicFlexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.TopLeftIntro {
+    color: white;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.QuoteBox { 
+    width: 30%; 
+    color: white;
+    font-weight: 900;
+}
+
+.BlackBar {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+
+.WhiteBar {
+    width: 100%;
+    /* height: fit-content; */
+    background-color: white;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 200px;
 }
