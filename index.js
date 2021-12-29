@@ -85,12 +85,11 @@ app.post('/send_email', (req, res) => {
         };
     
         transporter.sendMail(mail, (err, data) => {
-            // TODO: display error / success graphically
             if (err) {
-              console.log(err);
-              res.status(500).send("Something went wrong.");
+                res.status(500).render("index", { title: 'contact', outcome: "Sending failed. Please try again." });
             } else {
-              res.status(200).render("index", { title: 'contact' }); // Email successfully sent to recipient!
+                // Email successfully sent to recipient!
+                res.status(200).render("index", { title: 'contact', outcome: "Email sent successfully." });
             }
         });
     }

@@ -18,3 +18,8 @@ block main
                         p.TextInput Message:*
                         textarea(type='text', name='message', value='', required='true').Large
                     button(type='submit', value='submit').SendButton Send
+    script.
+        const o = !{JSON.stringify(outcome)};
+        if (o) {
+            alert(o);
+        }
