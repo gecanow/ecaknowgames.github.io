@@ -133,17 +133,8 @@ button:active {
 
 /* Views */
 
-.CoffeeShop {
-    background: url("../img/backgrounds/general.jpg") center center;
-}
-
-.WorkStation {
-    background: url("../img/work.jpg") center center;
-}
-
-.BlueRange {
-    background: url("../img/blue_range.jpg") left bottom;
-}
+/* Free to use (CC0): https://www.pexels.com/photo/computer-cup-desk-drink-434337/ */
+.WorkStation { background: url("../img/work.jpg") center center; }
 
 .HomeView {
     background-size: cover;
@@ -182,6 +173,12 @@ button:active {
 }
 
 /* Navigation */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 11000 !important;
+}
 
 .Navbar-navTitle {
     color: var(--white);

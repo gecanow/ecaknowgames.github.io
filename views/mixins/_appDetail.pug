@@ -3,7 +3,7 @@ mixin appDetail(app)
         link(rel='stylesheet', href='/styles/apps-style.css')
         .AppContainer(class=`${app.style_id}Color`)
             .AppImgView(class=`${app.style_id}ScrollPic`)
-            div.pad
+            .pad
                 p.appName #{app.name}
-                hr
+                hr.smallBar
                 p.appDescription #{app.description}
