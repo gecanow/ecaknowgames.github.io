@@ -9,11 +9,16 @@ block main
             p featured apps
         script.
             function appClick(app_id) {
-                // set the app_detail's inner html to hold the (hidden) app detail view
-                const current_html = document.getElementById("app_detail").innerHTML;
-                const target_html = document.getElementById(app_id).innerHTML;
-                const output_html = current_html === target_html ? "" : target_html;
-                document.getElementById("app_detail").innerHTML = output_html;
+                const curr_display = document.getElementById(`${app_id}-detail`).style.display;
+
+                // hide all descriptions just in case
+                document.querySelectorAll('[id$="-detail"]').forEach((caret) => {
+                    caret.style.display = "none";
+                });
+
+                // reveal / hide the app description
+                document.getElementById(`${app_id}-detail`).style.display = (curr_display === "block") ? "none" : "block";
+
 
                 // hide all caret pointers just in case
                 document.querySelectorAll('[id$="-caret"]').forEach((caret) => {
@@ -21,13 +26,13 @@ block main
                 });
 
                 // reveal / hide the caret pointer
-                const output_caret = current_html === target_html ? "hidden" : "visible";
+                const output_caret = (curr_display === "block") ? "hidden" : "visible";
                 document.getElementById(`${app_id}-caret`).style.visibility = output_caret;
             }
         .AppsContainer
             each app in apps
                 +appMainIcon(app)
-        div(class="hide")
+        div
             each app in apps
                 +appDetail(app)
         div(id="app_detail")

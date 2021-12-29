@@ -1,5 +1,5 @@
 mixin appDetail(app)
-    div(id=`${app.id}`)
+    div(id=`${app.id}-detail`).hide
         link(rel='stylesheet', href='/styles/apps-style.css')
         .AppContainer(class=`${app.style_id}Color`)
             .AppImgView(class=`${app.style_id}ScrollPic`)
