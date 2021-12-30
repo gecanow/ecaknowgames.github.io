@@ -1,0 +1,5 @@
+mixin warning(msg)
+    link(rel='stylesheet', href='/styles/warning-style.css')
+    .WarningContainer
+        h1.WarningText ⛔️ #{msg.title} ⛔️
+        p #{msg.description}

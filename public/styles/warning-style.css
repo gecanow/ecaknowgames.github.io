@@ -1,0 +1,16 @@
+@import url("style.css");
+
+.WarningContainer {
+    width: 300px;
+    height: fit-content;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.WarningText {
+    color: red;
+}

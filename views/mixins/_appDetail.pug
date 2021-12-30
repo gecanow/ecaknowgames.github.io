@@ -7,3 +7,5 @@ mixin appDetail(app)
                 p.appName #{app.name}
                 hr.smallBar
                 p.appDescription #{app.description}
+                a(href=`${app.link}` target="_blank" rel="noopener noreferrer")
+                    p.appDescription View #{app.name} in the App Store
