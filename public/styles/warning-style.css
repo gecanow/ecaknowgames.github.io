@@ -1,7 +1,7 @@
 @import url("style.css");
 
 .WarningContainer {
-    width: 300px;
+    max-width: 300px;
     height: fit-content;
     background-color: yellow;
     border: 5px solid black;
@@ -13,4 +13,24 @@
 
 .WarningText {
     color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.WarningContainer p {
+    text-align: left;
+    margin-left:20px;
+}
+
+.WarningContainer hr {
+    border: 0.2px solid black;
+    width: 90%;
+}
+
+.WarningContainer a {
+    color: blue;
+    text-decoration: underline;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }

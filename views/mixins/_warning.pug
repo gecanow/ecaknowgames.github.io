@@ -1,5 +1,16 @@
 mixin warning(msg)
     link(rel='stylesheet', href='/styles/warning-style.css')
-    .WarningContainer
-        h1.WarningText ⛔️ #{msg.title} ⛔️
+    script.
+        function toggleWarning(show) {
+            document.getElementById("warning-container").style.display = show ? "block" : "none";
+            document.getElementById("hidden-warning-container").style.display = show ? "none" : "block";
+        }
+    .WarningContainer(id="warning-container")
+        h2.WarningText ⛔️ #{msg.title} ⛔️
+        hr
         p #{msg.description}
+        a(onclick="toggleWarning(false)") Ok
+    .WarningContainer(id="hidden-warning-container").hide
+        h2.WarningText ⛔️ #{msg.title} ⛔️
+        hr
+        a(onclick="toggleWarning(true)") Show

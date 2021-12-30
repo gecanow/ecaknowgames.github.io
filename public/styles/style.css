@@ -226,6 +226,9 @@ button:active {
     height: var(--upper-bar-size);
     margin: 0px;
     justify-content: start;
+
+    padding-right: 2%;
+    padding-left: 1%;
 }
 
 .Navbar-subContainer {
@@ -233,8 +236,9 @@ button:active {
     flex-grow: 1;
     font-size: var(--m);
     max-width: 100px;
+    width: fit-content;
     height: var(--xl);
-    margin: var(--s) var(--m);
+    margin-bottom: var(--s);
     text-align: center;
     line-height: 0px;
     border-radius: var(--xs);
@@ -259,7 +263,7 @@ button:active {
 }
 
 .Bottombar-subcontainer {
-    height: var(--lower-bar-size);
+    height: fit-content;
     padding: 10px;
 
     display: flex;
