@@ -5,18 +5,10 @@ block main
             h1.CenterTitle LET'S GET IN TOUCH!
             form(action='/send_email', method='POST')
                 .InputContainer
-                    .Input
-                        p.TextInput Name:*
-                        input(type='text', name='name', value='', required='true').Short
-                    .Input
-                        p.TextInput Email:* 
-                        input(type='text', name='email', value='', required='true').Short
-                    .Input
-                        p.TextInput Subject:* 
-                        input(type='text', name='subject', value='', required='true').Short
-                    .Input
-                        p.TextInput Message:*
-                        textarea(type='text', name='message', value='', required='true').Large
+                    input(type='text', name='name', value='', required='true', placeholder='Name*').Short
+                    input(type='text', name='email', value='', required='true', placeholder='Email*').Short
+                    input(type='text', name='subject', value='', required='true', placeholder='Subject*').Short
+                    textarea(type='text', name='message', value='', required='true', placeholder='Message*').Large
                     button(type='submit', value='submit').SendButton Send
     script.
         const o = !{JSON.stringify(outcome)};
